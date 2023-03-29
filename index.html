@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gaming Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <h1>Gaming Quiz</h1>
+        <div class="time-container">
+          <span id="time">1:00</span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="start-screen">
+      <div class="container">
+        <h2>Are you ready?</h2>
+        <button id="start-button">Start Quiz</button>
+      </div>
+    </section>
+
+    <section class="quiz-screen">
+      <div class="container">
+        <div class="question-container">
+          <h3 id="question">Question 1</h3>
+          <ul class="options">
+            <li>
+              <input type="radio" name="option" id="option1" value="1" />
+              <label for="option1" id="option1-label"></label>
+            </li>
+            <li>
+              <input type="radio" name="option" id="option2" value="2" />
+              <label for="option2" id="option2-label"></label>
+            </li>
+            <li>
+              <input type="radio" name="option" id="option3" value="3" />
+              <label for="option3" id="option3-label"></label>
+            </li>
+            <li>
+              <input type="radio" name="option" id="option4" value="4" />
+              <label for="option4" id="option4-label"></label>
+            </li>
+          </ul>
+          <button id="next-button">Next</button>
+        </div>
+        <div class="progress-container">
+          <span id="progress">Question 1 of 10</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-screen">
+      <div class="container">
+        <h2 id="result-message">Quiz Completed</h2>
+        <ul>
+          <li>Correct Answers: <span id="correct-answers"></span></li>
+          <li>Wrong Answers: <span id="wrong-answers"></span></li>
+          <li>Score: <span id="score"></span></li>
+        </ul>
+        <button id="restart-button">Start Again</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

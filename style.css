@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  nav {
+    background-color: #111;
+    height:
+    80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+font-size: 28px;
+}
+
+.time-container {
+display: flex;
+align-items: center;
+}
+
+.time-container span {
+font-size: 24px;
+margin-left: 10px;
+}
+
+.start-screen,
+.quiz-screen,
+.result-screen {
+display: none;
+}
+
+.start-screen h2,
+.quiz-screen h3,
+.result-screen h2,
+.result-screen li {
+margin-bottom: 20px;
+}
+
+.start-screen button,
+.quiz-screen button,
+.result-screen button {
+background-color: #4caf50;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.start-screen button:hover,
+.quiz-screen button:hover,
+.result-screen button:hover {
+background-color: #3e8e41;
+}
+
+.quiz-screen .options {
+list-style: none;
+margin: 20px 0;
+padding: 0;
+}
+
+.quiz-screen .options li {
+margin: 10px 0;
+}
+
+.quiz-screen .options input[type="radio"] {
+display: none;
+}
+
+.quiz-screen .options label {
+display: inline-block;
+background-color: #222;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.quiz-screen .options label:hover {
+background-color: #444;
+}
+
+.quiz-screen .options input[type="radio"]:checked + label {
+background-color: #4caf50;
+}
+
+.quiz-screen #next-button {
+background-color: #4caf50;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+margin-top: 20px;
+display: none;
+}
+
+.quiz-screen #next-button:hover {
+background-color: #3e8e41;
+}
+
+.quiz-screen .progress-container {
+margin-top: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.quiz-screen .progress {
+height: 10px;
+background-color: #4caf50;
+}
+
+.result-screen ul {
+list-style: none;
+margin: 20px 0;
+padding: 0;
+}
+
+.result-screen li {
+margin-bottom: 10px;
+}
+
+.result-screen button {
+background-color: #4caf50;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.result-screen button:hover {
+background-color: #3e8e41;
+}
+
+.result-screen #result-message {
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+.result-screen #result-message.good {
+color: #4caf50;
+}
+
+.result-screen #result-message.bad {
+color: #f44336;
+}
