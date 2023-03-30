@@ -1,4 +1,43 @@
+// Set the initial time in seconds
+var timeLeft = 120;
 
+// Set the timer element
+var timerEl = document.getElementById('timer');
+
+// Set a variable to store the timer interval
+var timerInterval;
+
+// Function to start the timer
+function startTimer() {
+  // Decrement the time left by 1 second
+  timeLeft--;
+
+  // Calculate the minutes and seconds
+  var minutes = Math.floor(timeLeft / 60);
+  var seconds = timeLeft % 60;
+
+  // Add a leading zero to the seconds if necessary
+  if (seconds < 10) {
+    seconds = '0' + seconds;
+  }
+
+  // Update the timer element
+  timerEl.innerHTML = minutes + ':' + seconds;
+
+  // Check if time is up
+  if (timeLeft === 0) {
+    clearInterval(timerInterval);
+    alert('Time is up!');
+  }
+}
+
+// Function to start the timer interval
+function startTimerInterval() {
+  timerInterval = setInterval(startTimer, 1000);
+}
+
+// Call the startTimerInterval function to start the timer
+startTimerInterval();
 
 //Question bank
 var questionBank= [
