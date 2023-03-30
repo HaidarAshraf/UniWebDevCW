@@ -1,6 +1,13 @@
-body {
+
+body{
     background-color: darkgrey;
-    }
+    font-family: sans-serif;
+    background:darkgrey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 nav {
     background-color: darkgrey;
     height:80px;
