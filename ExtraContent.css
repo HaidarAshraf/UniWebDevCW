@@ -1,0 +1,24 @@
+body{
+    background-color: darkgrey;
+    font-family: sans-serif;
+    background:darkgrey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#header{
+    font-size: 2em; 
+	text-align: center; 
+    border: solid 2px black; 
+    color: black;
+    background:grey;
+
+}
+#textinh1{
+    font-size: 0.5em; 
+	text-align: center; 
+    border: solid 2px black; 
+    color: black;
+    background:grey;
+}
