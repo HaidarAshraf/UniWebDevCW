@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="Quiz.css">
 </head>
 <body>
-    <!--Nav bar on top of every page with css in css file-->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Quiz</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <!--Nav bar for Group on top of every page with css in css file-->
+<nav>
+    <ul>
+        <li><a href="">Presentation</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Comments</a></li>
+        <li><a href="#">Buy Products</a></li>
+        <li><a href="">Diagram</a></li>
+        <li><a href="https://w1905362.users.ecs.westminster.ac.uk/Quiz.html">Quiz</a></li>
+        <li><a href="">Thumbnail Images</a></li>
+        <li><a href="https://w1905362.users.ecs.westminster.ac.uk/StudentDetails.html">About Us</a></li>
+    </ul>
+</nav>
     <!--Timer Section inside a timerbox for easy css -->
     <div class="timer-box"><div id="timer">2:00</div></div>
 
@@ -48,8 +51,8 @@
     <!--container or division for scoreboard which apears after the quiz ends-->
     <div id="scoreboard">
         <img src="/images/completed.jpg" alt=""> <!--image saying completed at the end of the quiz-->
-        <h2 id="score-title">Your Score</h2>  <!--prints your score under the image-->
         <h2 id="message"></h2> <!--message for user depending on how they did in quiz id is used in js-->
+        <h2 id="score-title">Your Score</h2>  <!--prints your score under the image-->
         <h2 id="score"></h2> <!--how much they scored out of 10-->
         <button type="button" id="score-btn" onclick="backToQuiz()">Restart</button> <!--restart the quiz button for user to restart the quiz -->
     </div>
